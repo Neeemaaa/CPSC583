@@ -26,5 +26,10 @@
   d.	~(Q ∨ R)
     i.	¬Q
     ii.	¬R
-e.	P → (Q ∨ (R →  S))
-  i.	¬P ∨ Q ∨ ¬R ∨ S
+  e.	P → (Q ∨ (R →  S))
+    i.	¬P ∨ Q ∨ ¬R ∨ S
+5.	 
+  a.	Q ∨ R
+  b.	Q ∨ R ∨ S
+  c.	¬P ∨ Q
+
