@@ -1,0 +1,30 @@
+
+1.	Provide a picture
+2.	 
+  a.	Yes
+  b.	Yes
+  c.	Yes
+  d.	Yes
+  e.	No
+  f.	Yes
+  g.	Yes
+3.	 
+  a.	Yes
+  b.	No
+  c.	Yes
+  d.	Yes
+  e.	No
+4.	 
+  a.	P → (Q →  R)
+    i.	¬P ∨ ¬Q ∨ R
+  b.	~(P  →  R)
+    i.	P
+    ii.	¬R
+  c.	P → (R ∧ S)
+    i.	¬P ∨ R
+    ii.	¬P ∨ S
+  d.	~(Q ∨ R)
+    i.	¬Q
+    ii.	¬R
+e.	P → (Q ∨ (R →  S))
+  i.	¬P ∨ Q ∨ ¬R ∨ S
