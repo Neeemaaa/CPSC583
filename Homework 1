@@ -32,4 +32,29 @@
   a.	Q ∨ R
   b.	Q ∨ R ∨ S
   c.	¬P ∨ Q
+6. 
+P	Q	R	Q → ¬P	Q ∨ R	¬R	Conclusion: ¬P
+T	T	T	F	T	F	F
+T	T	F	F	T	T	F
+T	F	T	T	T	F	F
+T	F	F	T	F	T	F
+F	T	T	T	T	F	T
+F	T	F	T	T	T	T
+F	F	T	T	T	F	T
+F	F	F	T	F	T	T
+
+7.	At least one mine is present: 
+   (X_{0,1} ∨ X_{1,0} ∨ X_{1,1}) 
+
+At most one mine is present: 
+   ¬(X_{0,1} ∧ X_{1,0}) ∧ ¬(X_{0,1} ∧ X_{1,1}) ∧ ¬(X_{1,0} ∧ X_{1,1}) 
+
+Exactly one mine is adjacent to (0,0):
+   (X_{0,1} ∨ X_{1,0} ∨ X_{1,1}) ∧ ¬(X_{0,1} ∧ X_{1,0}) ∧ ¬(X_{0,1} ∧ X_{1,1}) ∧ ¬(X_{1,0} ∧ X_{1,1})
+8.	
+a.	Rt ∨ At ∨ Gt
+b.	Gt → At+1  
+At → Rt+1  
+Rt → Gt+1 
+
 
