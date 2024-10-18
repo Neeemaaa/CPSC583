@@ -6,3 +6,14 @@
 2b. ∀x (C(x) → P(x))
 2c. ∃x (C(x) ∧ P(x))
 2d. ∃x (C(x) ∧ ¬P(x))
+
+3a. Unification fails.
+3b. Unification succeeds.
+3c. Unification succeeds.
+3d. Unification succeeds.
+3e. Unification fails.
+3f. Unification fails.
+3g. Unification succeeds.
+3h. Unification fails.
+
+4a. 
