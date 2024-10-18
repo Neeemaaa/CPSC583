@@ -17,3 +17,47 @@
 3h. Unification fails.
 
 4a. 
+aunt(X, Y) :- female(X), parent(Z, Y), sibling(X, Z).
+sibling(X, Y) :- parent(P, X), parent(P, Y), X \= Y.
+4b. 
+paternal_ancestor(X, Z) :- male(X), parent(X, Z).     % Direct paternal ancestor (father)
+paternal_ancestor(X, Z) :- male(X), parent(X, Y), paternal_ancestor(Y, Z). % Recursive case
+
+5a.
+- T(x): The student has taken course x.
+- Prereq(x, y): Course y is a prerequisite for course x.
+- CanTake(x): The student can take course x.
+- AllPrereqsTaken(x): All prerequisites for course x have been taken.
+
+5b.
+Prerequisites for courses:
+	•	Prereq(CPSC375, CPSC131) (CPSC131 is a prerequisite for CPSC375)
+	•	Prereq(CPSC375, MATH338) (MATH338 is a prerequisite for CPSC375)
+	•	Prereq(CPSC481, CPSC335) (CPSC335 is a prerequisite for CPSC481)
+	•	Prereq(CPSC481, MATH338) (MATH338 is a prerequisite for CPSC481)
+	•	Prereq(CPSC483, CPSC375) (CPSC375 is a prerequisite for CPSC483)
+
+A course can only be taken if all prerequisites have been taken:
+	•	CanTake(x) ← AllPrereqsTaken(x)
+
+If a course has been taken, all of its prerequisites have also been taken:
+	•	T(x) → AllPrereqsTaken(x)
+
+A course cannot be taken again:
+	•	¬CanTake(x) ← T(x)
+
+5c.
+With CPSC481 taken:
+
+i. CanTake(CPSC375)? → Valid
+ii. CanTake(CPSC481)? → Invalid
+iii. CanTake(CPSC483)? → Valid
+iv. T(CPSC375)? → Unknown (Invalid)
+
+5d.
+With CPSC131 and CPSC481 taken:
+
+i. CanTake(CPSC375)? → Valid
+ii. CanTake(CPSC481)? → Invalid
+iii. CanTake(CPSC483)? → Valid
+iv. T(CPSC375)? → Unknown (Invalid)
