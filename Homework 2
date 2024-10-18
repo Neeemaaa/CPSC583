@@ -1,1 +1,8 @@
+1a. Yes, this is well-formed.
+1b. No, this is not well-formed because it's missing a predicate after ∃y.
+1c. Yes, this is well-formed.
 
+2a. ∃x C(x)
+2b. ∀x (C(x) → P(x))
+2c. ∃x (C(x) ∧ P(x))
+2d. ∃x (C(x) ∧ ¬P(x))
