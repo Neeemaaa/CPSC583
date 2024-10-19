@@ -61,3 +61,48 @@ i. CanTake(CPSC375)? → Valid
 ii. CanTake(CPSC481)? → Invalid
 iii. CanTake(CPSC483)? → Valid
 iv. T(CPSC375)? → Unknown (Invalid)
+
+6a.
+i.
+course(cpsc131).
+course(cpsc335).
+course(cpsc375).
+course(cpsc481).
+course(cpsc483).
+course(math338).
+
+prereq(cpsc375, cpsc131).
+prereq(cpsc375, math338).
+prereq(cpsc481, cpsc335).
+prereq(cpsc481, math338).
+prereq(cpsc483, cpsc375).
+
+ii.
+(1)
+taken(Course) :- taken(Course, true).
+
+% A course can be taken if all prerequisites have been taken
+can_take(Course) :-
+    course(Course),
+    \+ taken(Course),  % Course has not been taken already
+    forall(prereq(Course, Prereq), taken(Prereq)).
+
+% Helper rule to define a course as taken
+taken(Course) :- taken(Course, true).
+
+(2)
+taken(Course) :-
+    taken(Course, true).
+
+% Example of user-specific facts, to be dynamically added.
+% This can be updated with more user-specific facts to reflect
+% which courses have been taken.
+taken(cpsc481, true).
+
+6b.
+course(cpsc499).
+prereq(cpsc499, cpsc375).
+prereq(cpsc499, cpsc481).
+The current rules will automatically adjust to the new courses because they rely on the prereq/2 and course/1 predicates.
+No additional changes are needed in the rules. However, user-specific facts about which courses have been taken should be updated to reflect the student’s progress.
+
