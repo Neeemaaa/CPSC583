@@ -106,3 +106,6 @@ prereq(cpsc499, cpsc481).
 The current rules will automatically adjust to the new courses because they rely on the prereq/2 and course/1 predicates.
 No additional changes are needed in the rules. However, user-specific facts about which courses have been taken should be updated to reflect the student’s progress.
 
+7. 
+?- prereq(cpsc375, C), !.
+C = cpsc131.
