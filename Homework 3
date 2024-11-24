@@ -1,1 +1,24 @@
-It's completed but I will wait until tomorrow or Saturday to post.
+1.	 
+a.	  
+belongsTo:
+"CPSC131" → "Computer Science Department"
+"CPSC375" → "Computer Science Department"
+"CPSC483" → "Computer Science Department"
+"MATH338" → "Mathematics Department"
+hasPrerequisite:
+"CPSC375" → "CPSC131"
+"CPSC483" → "CPSC375"
+"CPSC483" → "MATH338"
+hasUnits:
+"CPSC131" → "3 units"
+"CPSC375" → "3 units"
+"CPSC483" → "3 units"
+"MATH338" → "4 units"
+subsetOf:
+"Computer Science Department" → "Departments"
+"Mathematics Department" → "Departments"
+instanceOf:
+"CPSC131" → "Course"
+"CPSC375" → "Course"
+"CPSC483" → "Course"
+"MATH338" → "Course"
