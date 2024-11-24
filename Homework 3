@@ -29,3 +29,13 @@ iii.	Is CPSC375 a prerequisite of CPSC483? CPSC375 explicitly stated to be a pre
 iv.	Is CPSC131 a prerequisite of CPSC483? While CPSC 131 is a prerequisite of CPSC375, which is a prerequisite of 483, there is no explicit perquisite of 131 for 483.
 v.	What are the prerequisites of CPSC483? CPSC483 has prerequisites CPSC375 and MATH338.
 vi.	Does CPSC131 belong to Computer Science Department? CPSC131 is explicitly stated to be part of the Computer Science Department.
+
+2.
+a.	CPSC-583 ex:is-located-in CS-110B .
+CPSC-583 ex:is-offered-by ComputerScience .
+
+CPSC-597 ex:is-located-in CS-110B .
+CPSC-597 ex:is-offered-by ComputerScience .
+
+CPSC-473 ex:is-located-in CS-406 .
+CPSC-473 ex:is-offered-by ComputerScience .
