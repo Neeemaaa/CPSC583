@@ -22,3 +22,10 @@ instanceOf:
 "CPSC375" → "Course"
 "CPSC483" → "Course"
 "MATH338" → "Course"
+b.	 Using default reasoning, answer the following queries or state that they cannot be answered.
+i.	How many units is CPSC131? This is explicitly stated that CPSC131 has 3 units.
+ii.	How many units is MATH338? This is explicitly stated that MATH338 has 4 units.
+iii.	Is CPSC375 a prerequisite of CPSC483? CPSC375 explicitly stated to be a prerequisite of CPSC483.
+iv.	Is CPSC131 a prerequisite of CPSC483? While CPSC 131 is a prerequisite of CPSC375, which is a prerequisite of 483, there is no explicit perquisite of 131 for 483.
+v.	What are the prerequisites of CPSC483? CPSC483 has prerequisites CPSC375 and MATH338.
+vi.	Does CPSC131 belong to Computer Science Department? CPSC131 is explicitly stated to be part of the Computer Science Department.
