@@ -78,3 +78,5 @@ is_animal(dog) :- teeth(true), tongue(true).
 is_animal(cat) :- teeth(true), tongue(false).
 is_animal(cat) :- teeth(false), tongue(true).
 is_animal(cat) :- teeth(false), tongue(false).
+
+4a)
