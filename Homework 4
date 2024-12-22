@@ -80,4 +80,5 @@ is_animal(cat) :- teeth(false), tongue(true).
 is_animal(cat) :- teeth(false), tongue(false).
 
 4a)
+
 4b)
